@@ -1,4 +1,4 @@
-﻿# ☕ Warm Bean Café – Coffee Ordering Web App
+﻿# Warm Bean Café – Coffee Ordering Web App
 
 ## Overview
 Welcome to **Warm Bean Café**, a cozy web app where every cup is crafted with care! ☕  
@@ -14,7 +14,7 @@ Place and manage coffee orders easily with our responsive, modern interface.
 ## Tech Stack
 - **Backend:** ASP.NET Core MVC (C#)
 - **Frontend:** HTML5, CSS3, Bootstrap 5
-- **Database:** SQL Server / Entity Framework Core
+- **Database:** SSMS / Entity Framework Core
 
 ## Usage
 1. Open the project in **Visual Studio 2022**  
