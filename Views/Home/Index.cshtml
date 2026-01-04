@@ -1,8 +1,111 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .hero {
+        background: linear-gradient(135deg, rgba(62,39,35,0.7), rgba(109,76,65,0.7)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200') center/cover;
+        color: white;
+        min-height: 75vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        animation: fadeIn 1.2s ease forwards;
+    }
+
+    @@keyframes fadeIn {
+        0%
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.95;
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.4s;
+        opacity: 0;
+    }
+
+    .hero .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 5px 15px rgba(255,111,0,0.4);
+        transition: all 0.3s ease;
+        margin: 5px;
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+    }
+
+    .hero .btn-primary {
+        animation-delay: 0.6s;
+    }
+
+    .hero .btn-secondary {
+        animation-delay: 0.8s;
+    }
+
+    .hero .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255,111,0,0.6);
+    }
+
+    @@media (max-width: 768px) {
+        .hero h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+
+    }
+</style>
+
+<div class="hero">
+    <h1>☕ Warm Bean Café</h1>
+    <p>Café where every cup is crafted with care, warmth, and a touch of happiness.</p>
+
+    <div>
+        <a href="@Url.Action("Add", "CoffeeOrder")" class="btn btn-primary btn-lg">
+            + Place an Order
+        </a>
+        <a href="@Url.Action("List", "CoffeeOrder")" class="btn btn-secondary btn-lg">
+            View Orders
+        </a>
+    </div>
 </div>

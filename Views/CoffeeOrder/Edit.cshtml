@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="page-header">
-        <h1>✏️ Edit Coffee Order</h1>
+        <h1>Edit Coffee Order</h1>
         <p>Order ID: @Model.Id</p>
     </div>
 
@@ -16,24 +16,24 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">☺️ Customer Name</label>
+                    <label class="form-label">Customer Name</label>
                     <input type="text" class="form-control" asp-for="CustomerName" required />
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">📊 Status</label>
+                    <label class="form-label">Status</label>
                     <select class="form-select" asp-for="Status">
-                        <option value="Pending">⏳ Pending</option>
-                        <option value="Preparing">🔥 Preparing</option>
-                        <option value="Ready">✅ Ready</option>
-                        <option value="Completed">✔️ Completed</option>
-                        <option value="Cancelled">❌ Cancelled</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Preparing">Preparing</option>
+                        <option value="Ready">Ready</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Cancelled">Cancelled</option>
                     </select>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">☕ Coffee Type</label>
+                    <label class="form-label">Coffee Type</label>
                     <select class="form-select" asp-for="CoffeeType" required>
                         <option value="Espresso">Espresso</option>
                         <option value="Americano">Americano</option>
@@ -44,7 +44,7 @@
                     </select>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">📏 Size</label>
+                    <label class="form-label">Size</label>
                     <select class="form-select" asp-for="Size" required>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
@@ -55,7 +55,7 @@
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">🥛 Milk Type</label>
+                    <label class="form-label">Milk Type</label>
                     <select class="form-select" asp-for="MilkType">
                         <option value="Whole Milk">Whole Milk</option>
                         <option value="Skim Milk">Skim Milk</option>
@@ -66,7 +66,7 @@
                     </select>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">🍯 Flavor/Syrup</label>
+                    <label class="form-label">Flavor/Syrup</label>
                     <select class="form-select" asp-for="FlavorSyrup">
                         <option value="None">None</option>
                         <option value="Vanilla">Vanilla</option>
@@ -82,16 +82,16 @@
             <div class="mb-4">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="WhippedCream" asp-for="WhippedCream" />
-                    <label class="form-check-label" for="WhippedCream">🍦 Whipped Cream</label>
+                    <label class="form-check-label" for="WhippedCream">Whipped Cream</label>
                 </div>
             </div>
 
             <div class="alert alert-info mb-4">
-                <strong>💰 Current Price:</strong> ₱@Model.Price.ToString("F2")
+                <strong>Current Price:</strong> ₱@Model.Price.ToString("F2")
             </div>
 
             <div class="d-flex gap-3">
-                <button type="submit" class="btn btn-primary btn-lg">💾 Update Order</button>
+                <button type="submit" class="btn btn-primary btn-lg">Update Order</button>
                 <a href="@Url.Action("List", "CoffeeOrder")" class="btn btn-secondary btn-lg">Cancel</a>
             </div>
         </form>

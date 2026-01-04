@@ -15,7 +15,6 @@ namespace CoffeeOrdering.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure decimal precision for Price
             modelBuilder.Entity<CoffeeOrder>()
                 .Property(c => c.Price)
                 .HasPrecision(18, 2);

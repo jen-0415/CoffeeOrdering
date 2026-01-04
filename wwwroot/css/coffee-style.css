@@ -1,5 +1,4 @@
-﻿/* Coffee Theme Colors */
-:root {
+﻿:root {
     --coffee-dark: #3e2723;
     --coffee-medium: #6d4c41;
     --coffee-light: #a1887f;
@@ -8,14 +7,12 @@
     --success-green: #4caf50;
 }
 
-/* Body & General Styling */
 body {
     background: linear-gradient(135deg, var(--coffee-cream) 0%, #fafafa 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
 
-/* Navbar Enhancement */
 .navbar {
     background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%) !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -42,7 +39,6 @@ body {
         transform: translateY(-2px);
     }
 
-/* Card Enhancements */
 .card {
     border: none;
     border-radius: 15px;
@@ -56,7 +52,6 @@ body {
         box-shadow: 0 12px 24px rgba(0,0,0,0.15);
     }
 
-/* Coffee Order Form Container */
 .order-container {
     background: white;
     border-radius: 20px;
@@ -78,7 +73,6 @@ body {
     }
 }
 
-/* Page Headers */
 .page-header {
     background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
     color: white;
@@ -99,7 +93,6 @@ body {
         opacity: 0.9;
     }
 
-/* Form Controls Enhancement */
 .form-label {
     font-weight: 600;
     color: var(--coffee-dark);
@@ -118,7 +111,6 @@ body {
         box-shadow: 0 0 0 0.2rem rgba(255, 111, 0, 0.25);
     }
 
-/* Custom Checkbox */
 .form-check-input {
     width: 20px;
     height: 20px;
@@ -137,7 +129,6 @@ body {
     font-weight: 500;
 }
 
-/* Button Enhancements */
 .btn-primary {
     background: linear-gradient(135deg, var(--coffee-accent) 0%, #ff8f00 100%);
     border: none;
@@ -191,7 +182,6 @@ body {
     font-weight: 600;
 }
 
-/* Table Enhancements */
 .table-responsive {
     border-radius: 15px;
     overflow: hidden;
@@ -237,7 +227,6 @@ body {
     font-size: 0.85rem;
 }
 
-/* Alert Enhancements */
 .alert {
     border: none;
     border-radius: 15px;
@@ -255,7 +244,6 @@ body {
     color: white;
 }
 
-/* Footer Enhancement */
 .footer {
     background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
     color: white;
@@ -263,7 +251,6 @@ body {
     margin-top: 50px;
 }
 
-/* Coffee Cup Icon Animation */
 @keyframes steam {
     0% {
         transform: translateY(0) scale(1);
@@ -282,7 +269,6 @@ body {
     animation: steam 2s ease-in-out infinite;
 }
 
-/* Loading Animation */
 .loading {
     display: inline-block;
     width: 20px;
@@ -299,7 +285,6 @@ body {
     }
 }
 
-/* Empty State */
 .empty-state {
     text-align: center;
     padding: 60px 20px;
@@ -311,7 +296,6 @@ body {
         margin-bottom: 15px;
     }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .order-container {
         padding: 20px;
@@ -331,7 +315,6 @@ body {
         }
 }
 
-/* Smooth Transitions */
 * {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
