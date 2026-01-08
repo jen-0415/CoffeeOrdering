@@ -101,8 +101,8 @@ namespace CoffeeOrdering.Controllers
                 "Americano" => 140m,
                 "Matcha Latte" => 180m,
                 "Cappuccino" => 150m,
-                "Mocha" => 150,
-                "Caramel Macchiato" => 170,
+                "Mocha" => 150m,
+                "Caramel Macchiato" => 170m,
                 _ => 3.00m
             };
 
